@@ -1,0 +1,20 @@
+In Git Bash:
+scp ./Presidents.xls sl6325@dumbo.es.its.nyu.edu:/home/sl6325
+scp ./gdp.csv sl6325@dumbo.es.its.nyu.edu:/home/sl6325
+scp ./ue.csv sl6325@dumbo.es.its.nyu.edu:/home/sl6325
+scp ./cpi.csv sl6325@dumbo.es.its.nyu.edu:/home/sl6325
+
+After logging into Dumbo:
+ls
+
+Make a directory for the project:
+hdfs dfs -mkdir proj1
+
+To check the directory was made:
+hdfs dfs -ls
+
+Put the data into the directory:
+hdfs dfs -put /user/sl6325/Presidents.xls proj1
+hdfs dfs -put /user/sl6325/gdp.csv proj1
+hdfs dfs -put /user/sl6325/ue.csv proj1
+hdfs dfs -put /user/sl6325/cpi.csv proj1
